@@ -21,7 +21,7 @@ from app2 import views as app2
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista1/', app1.display),
-    path('hora/', app1.displayDateTime)
+    path('hora/', app1.displayDateTime),
     path('perrito/',app2.perrito),
 ]
 
