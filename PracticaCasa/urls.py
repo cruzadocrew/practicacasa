@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app1 import views as app1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vista1/', app1.display),
+    path('hora/', app1.displayDateTime)
 ]
